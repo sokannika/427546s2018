@@ -1,0 +1,133 @@
+﻿<html>
+<head>
+    <title> Hello World !!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Hello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Welcome to the Drawing World!!</h1>
+            <p>With the page below, you can draw anything you want</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+                <canvas id="canvas" width="150" height="150">canvas setpixel</canvas>
+                <script type="text/javascript" src="Hello.js"></script>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel-group">
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="penel-title">
+                                <a data-toggle="collapse" href="#collapse1">Click Here to Draw a Line</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form id="line">
+                                    Position X0: <input type="number" name="x0" id="Lx0" value=""><br>
+                                    Position Y0: <input type="number" name="y0" id="Ly0" value=""><br>
+                                    Position X1:  <input type="number" name="x1" id="Lx1" value=""><br>
+                                    Position Y1: <input type="number" name="y1" id="Ly1" value=""><br>
+                                </form>
+                                <button onclick="MidPointLine(document.getElementById('Lx0').value, document.getElementById('Ly0').value, document.getElementById('Lx1').value, document.getElementById('Ly1').value )">Draw</button>
+                                <button onclick="Clear()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="penel-title">
+                                <a data-toggle="collapse" href="#collapse2">Click Here to Draw a Circle</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form id="circle">
+                                    Center X: <input type="number" name="x0" id="Cx" value=""><br>
+                                    Center Y: <input type="number" name="y0" id="Cy" value=""><br>
+                                    Radius:  <input type="number" name="x1" id="Cr" value="">
+                                </form>
+                                <button onclick="MidPointCircle(document.getElementById('Cx').value, document.getElementById('Cy').value, document.getElementById('Cr').value)">Draw</button>
+                                <button onclick="Clear()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="penel-title">
+                                <a data-toggle="collapse" href="#collapse3">Click Here to Draw an Ellipse</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form id="ellipse">
+                                    Center X: <input type="number" name="x0" id="Ex" value=""><br>
+                                    Center Y: <input type="number" name="y0" id="Ey" value=""><br>
+                                    Hori. Radius:  <input type="number" name="x1" id="Hr" value=""><br>
+                                    Vert. Radius:  <input type="number" name="x1" id="Vr" value="">
+                                </form>
+                                <button onclick="MidPointEllipse(document.getElementById('Ex').value, document.getElementById('Ey').value, document.getElementById('Hr').value, document.getElementById('Vr').value)">Draw</button>
+                                <button onclick="Clear()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="penel-title">
+                                <a data-toggle="collapse" href="#collapse4">Click Here to Draw a Rectangle</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form id="Rectangle">
+                                    Position X0: <input type="number" name="x0" id="Rx0" value=""><br>
+                                    Position Y0: <input type="number" name="y0" id="Ry0" value=""><br>
+                                    Width:  <input type="number" name="x1" id="Rw" value=""><br>
+                                    Height: <input type="number" name="y1" id="Rh" value=""><br>
+                                </form>
+                                <button onclick="DrawRect(document.getElementById('Rx0').value, document.getElementById('Ry0').value, document.getElementById('Rw').value, document.getElementById('Rh').value )">Draw</button>
+                                <button onclick="Clear()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="penel-title">
+                                <a data-toggle="collapse" href="#collapse5">Click Here to Draw a Polygon</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form id="Polygon">
+                                    Position X0: <input type="number" name="x0" id="Px0" value=""><br>
+                                    Position Y0: <input type="number" name="y0" id="Py0" value=""><br>
+                                    Radius:  <input type="number" name="x1" id="Pr" value=""><br>
+                                    Sides: <input type="number" name="y1" id="Ps" value=""><br>
+                                </form>
+                                <button onclick="DrawPolygons(document.getElementById('Px0').value, document.getElementById('Py0').value, document.getElementById('Pr').value, document.getElementById('Ps').value )">Draw</button>
+                                <button onclick="Clear()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
