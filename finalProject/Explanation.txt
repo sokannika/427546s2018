@@ -1,0 +1,6 @@
+How the program run:
+
+As of right now, there is no functionality in this program yet. I am currently working on getting the shape right first before trying to get the functionality right.
+So, right now, all three elevations are shown in one picture. There is only one object present, which is a house.
+
+During the work in progress, the program should take user inputs for starting point, and allow user to change objects and elevations.

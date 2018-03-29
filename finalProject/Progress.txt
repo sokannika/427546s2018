@@ -1,0 +1,4 @@
+Progress:
+
+At the moment, I am still working on creating the objects and their 3 elevations.
+I will start making more modification during the week.

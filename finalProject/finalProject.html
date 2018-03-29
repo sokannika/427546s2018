@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Let's Draw</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="finalProject.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Let's Draw 3D!!</h1>
+
+        <div class="row">
+            <!--canvas column-->
+            <div class="col-sm-10">
+                <canvas id="canvas" width="200" height="150">canvas setpixel</canvas>
+                <script type="text/javascript" src="finalProject.js"></script>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="panel-group">
+
+                    <!--input-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Inputs</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="input">
+                            X Center: <input type="number" name ="xc" id="xc" value="" ><br />
+                            Y Center: <input type="number" name="yc" id="yc" value="" ><br /> <br />
+                            <button onclick="drawObj()">Draw</button>
+                            <button onclick="clearCtx()"> Clear</button><br />
+                            <br>
+                        </form>
+                    </div>
+                
+
+                    <!--objects-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Objects</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="objects">
+                            <label><input type="radio" name="house" id="house" value="house"> House</label><br>
+                            <button type="button" id="clear" onclick="clear()"> Clear</button><br />
+                            <br>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!--elevation-->
+                <div class="panel panel-info">
+                    <div class="panel-heading">Elevations</div>
+                </div>
+                <div class="panel-body">
+                    <form id="elevations">
+                        <label><input type="radio" name="front" id="front" value="front"> Front</label><br>
+                        <label><input type="radio" name="top" id="top" value="top"> Top</label><br>
+                        <label><input type="radio" name="side" id="side" value="side"> Side</label><br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
