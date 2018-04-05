@@ -1,0 +1,10 @@
+Manual - Week 2
+
+So far there is only one object that the user can view, which is a house.
+The house can be viewed by selecting one of the elevations (front, top, side), then click "Draw" in "Inputs" panel.
+
+To see transformation of the object, the user has to select one of the transformations radio buttons (translate, rotate, scale, and shear).
+User has to enter the input in the textbox(es) following the selected radio button. 
+For example, if "Translate" is selected, user has to enter values for x and y. Otherwise, no changes will be seen.
+
+For each drawing, the user has to clear the canvas by clicking "Clear". Otherwise, the program will not work as intended.

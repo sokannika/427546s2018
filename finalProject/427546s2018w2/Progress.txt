@@ -1,0 +1,9 @@
+Progress - Week 2
+
+At this moment, I have implemented the transformations to the created object.
+The tranformations include translate, rotate, scale, and shear. These work very well with the created object.
+I currently only have one object, which is a house. I have successfully created the 3 elevations to be viewed separately. 
+Unlike the 1st week that these elevations could only be viewed all at once.
+
+So far, the user can choose to view the house from the 3 elevations, which are front, top, and side.
+They can also choose to transform the object by choosing the options from the "Transformations" panel.
