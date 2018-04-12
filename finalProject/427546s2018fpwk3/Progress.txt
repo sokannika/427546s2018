@@ -1,0 +1,4 @@
+Progress - Week 3
+
+This week I'm focusing on creating 3D object and movement. My code is supposed to have an animation of a sphere going around the image.
+I created a new folder. The main purpose of this folder is to test all the new features that I'm currently creating 
