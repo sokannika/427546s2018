@@ -1,0 +1,9 @@
+Manual - Week 4
+
+This week I am focusing on texture mapping, camera, lighting, and animation. I have found a very useful javascript library called three.js, which help me with creating the animation, the camera view, the lighting, and the texture.
+I created a new webpage to display the static image of a cube rotating. The webpage is called TextureMapping.html. I created a link to access the page from my initial webpage as well.
+
+There is also a user interaction on this page. The user can use a mouse to drag to change the view of the cube.
+
+In the original page, which I call Home, there is a link to go to see the other 2 pages. The links are under "Inputs" panel. 
+By clicking the link, it will take the user to see the corresponding pages. In each pages, there is a link to navigate back to "Home" as well. The link is call "Go Back to Home" locating at the upper left corner of the page.

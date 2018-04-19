@@ -1,0 +1,8 @@
+Progress - Week 4
+
+This week I'm focusing on texture mapping, camera view, lighting, and animation. With the help of three.js library, I am able to create and animate a cube rotating. The texture mapping include a red cube and a text in the cube.
+I created a new page for this feature because this is still part of the testing code. I am also able to create user interaction on this new page, TextureMapping.html, by using getControl function from the three.js library.
+This control allows the user to use a mouse to drag on the canvas and it changes the camera view of the cube.
+With this success, I can implement this to work with my original object, the house. I am planning to add this implementation to the original webpage sometime this week.
+
+For the bump mapping feature of last week, I am planning to add user interaction by allowing user to change the background image, add more bump mappings, etc... This feature is also in a separate webpage.
