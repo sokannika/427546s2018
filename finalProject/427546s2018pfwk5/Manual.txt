@@ -1,0 +1,10 @@
+Manual - Week 5
+
+This week I'm focusing on perspective and deformation of object.
+I'm creating a new webpage for it called "perspective.html". This page uses a help of a library called "scraw.js". This library has plenty of useful functions to manipulate objects in term of changing perspectives and deformations.
+
+However, since I have not quite got a hang of using this library properly yet, therefore, my page does not work as it's supposed to.
+The page is showing a picture of puppies and the user is supposed to be able to drag the edges of the picture to change perspectives and deform the picture.
+
+I will continue to work on this to get this feature work correctly before the final submission.
+As of right now, the page just display the picture...

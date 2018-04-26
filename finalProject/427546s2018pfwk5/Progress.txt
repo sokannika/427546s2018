@@ -1,0 +1,9 @@
+Progress - Week 45
+
+This week I'm focusing on changing and deforming perspective of a picture in a new webpage called "perspective.html". After a few research, I have found a new library called "scraw.js" where it contains plenty deforming object functions.
+With the help of this library, my code is supposed to be able to use mouse to drage edges of the picture and it changes perspective, size, and deformation of the picture.
+However, I have not quite get a hang of this library yet, which is why my code does not seem to work as it's supposed.
+
+Before the final submission, I will be focusing on getting this feature ready.
+Overall, I think my project has ost of the required features such as persepctive projection, changing elements, texture mapping, bumb mapping, etc...
+I will aolso clean up the project and make it more user friendly. If I have extra time, I will add more features as well.
