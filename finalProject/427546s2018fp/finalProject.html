@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Let's Draw</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="finalProject.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Let's Draw 3D!!</h1>
+
+        <div class="row">
+            <!--canvas column-->
+            <div class="col-sm-8">
+                <canvas id="canvas" width="200" height="150">canvas setpixel</canvas>
+                <script type="text/javascript" src="finalProject.js"></script>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="panel-group">
+                    <!--transformation-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Transformations</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="transformation">
+                            <label><input type="radio" name="transform" id="translate" value=""> Translate</label><br>
+                            X (in pixel): <input type="number" name="x" id="x" value="" /><br />
+                            Y (in pixel): <input type="number" name="y" id="y" value="" /><br /><br />
+                            <label><input type="radio" name="transform" id="rotate" value=""> Rotate</label><br>
+                            Rotate Angle (in degree): <input type="number" name="r" id="r" value="" /><br /><br />
+                            <label><input type="radio" name="tranform" id="scale" value=""> Scale</label><br>
+                            Scaled Width (in %, e.g. enter 0.5 as 50%): <input type="number" name="px" id="px" value="" /><br />
+                            Scaled Height (in %, e.g. enter 0.5 as 50%): <input type="number" name="py" id="py" value="" /><br /><br />
+                            <label><input type="radio" name="tranform" id="shear" value=""> Shear</label><br>
+                            Shear Horizontally (in %, e.g. enter 0.5 as 50%): <input type="number" name="sx" id="sx" value="" /><br />
+                            Shear Vertically (in %, e.g. enter 0.5 as 50%): <input type="number" name="sy" id="sy" value="" /><br /><br />
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="panel-group">
+
+                    <!--input-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Inputs</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="input">
+                            <button type="button" onclick="drawObj()">Draw</button>
+                            <button onclick="clearCtx()"> Clear</button><br />
+                            <p><a href="./TextureMapping.html">Let's Go Texture Mapping!!</a></p>
+                            <p><a href="./testDraw.html">Let's Go Bump Mapping!!</a></p>
+                            <p><a href="./perspective.html">Go back to see Perspective!!</a></p>
+                            <br>
+                        </form>
+                    </div>
+
+
+                    <!--objects
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Objects</div>
+                        </div>
+                        <div class="panel-body">
+                            <form id="objects">
+                                <label><input type="radio" name="house" id="house" value="house"> House</label><br>
+                                <button type="button" id="clear" onclick="clear()"> Clear</button><br />
+                                <br>
+                            </form>
+                        </div>
+                    </div>-->
+                    <!--elevation-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Elevations</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="elevations">
+                            <label><input type="radio" name="elev" id="front" value="front"> Front</label><br>
+                            <label><input type="radio" name="elev" id="top" value="top"> Top</label><br>
+                            <label><input type="radio" name="elev" id="side" value="side"> Side</label><br>
+                            <br>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

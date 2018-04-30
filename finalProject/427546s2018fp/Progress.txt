@@ -1,0 +1,20 @@
+Progress - Final Submission
+
+As the final submission, I added a few user interactions to my program. 
+For this project, I created 4 webpages. 
+
+The main page is about drawing 2D object, which in this case is a house.
+This page allows user to draw a house with 3 elevations - front, top, and side. It also allows user to transform the object as well.
+The user can change the object's position, rotate, translate, scale, and shear with input data.
+
+The second page is about moving bump mapping. This page display an image with a sphere moving around the image as if the sphere is pushing the image towards the user.
+There are 5 images to view in this page. User can select to see the moving sphere with 5 image options.
+
+The third page is about texture mapping. This is the most challenging part of this project for me.
+The page display a rotating cube. The texture mapping of this part is the text that is on the cube.
+This page also allows user to zoom in and out. The cube rotates so the user can see it from multiple angles. The user can also interrupt the rotation by dragging the mouse on the cube.
+It also shows camera, viewer, and light sources as well. However, there is only one setting for this, so everything is all coded in the program. The user can't change any setting on that.
+For this page, I use "three.js" to help with camera veiew, light source, viewer source and texture mapping.
+
+The last page is about perspective. This page allow users to deform an image. With 4 points on the edges of the image, the user can drag to any direction to deform the image and see it from many perspectives.
+For this page, I use a library called "scrawl.js" to help with deformation.

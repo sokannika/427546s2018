@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>3D Test Drawing</title>
+    <link href="testDraw.css" rel="stylesheet" type="text/css" />
+    <script src="testDraw.js"></script>
+</head>
+<body onload="change()">
+    <header>
+        <h2>Let's 3D Test Draw</h2>
+    </header>
+    <p><a href="./finalProject.html">Go back to Home!!</a></p>
+    <div class="container">
+        <canvas id="slideshow" width="1024" height="631"></canvas>
+        <canvas id="obj" width="256" height="256"></canvas>
+
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">Choose Background Picture</div>
+                <div class="panel-body">
+                    <label class="radio-inline">
+                        <input type="radio" name="image" id="kim" checked onchange="change()">Kim Possible
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="image" id="lilo" onchange="change()">Lilo & Stitch
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="image" id="mickey" onchange="change()">Mickey & Friends
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="image" id="peter" onchange="change()">Peter Pan
+                    </label><label class="radio-inline">
+                        <input type="radio" name="image" id="puppies" onchange="change()">Adorable Puppies
+                    </label><br /><br />
+                </div>
+            </div>
+           
+    </div>
+</div>
+</body>
+</html>

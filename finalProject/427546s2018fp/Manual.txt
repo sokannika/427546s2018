@@ -1,0 +1,23 @@
+Manual - Final Submission
+
+For this project, so far I believe I have covered most of the features that are listed in the project instructions.
+
+The homepage of this project is "finalProject.html". The object, a house, can be viewed by selecting one of the elevations (front, top, side), then click "Draw" in "Inputs" panel.
+To see transformation of the object, the user has to select one of the transformations radio buttons (translate, rotate, scale, and shear).
+User has to enter the input in the textbox(es) following the selected radio button. 
+For example, if "Translate" is selected, user has to enter values for x and y. Otherwise, no changes will be seen.
+For each drawing, the user has to clear the canvas by clicking "Clear". Otherwise, the program will not work as intended.
+
+To go the second page, the user can access by clicking on one of the links that are located in "User Input" panel.
+For "Texture Mapping" page, it display a rotating cube with a text texture on it. This rotation allow users to see the object from multiple angles.
+User can also zoom in and out by sliding fingers away from each other (same as zoom in and out on touchscreen phone, which is why this would only work on touchscreen computer). The user can interrupt the rotation by dragging a mouse on the cube.
+User can drag it to any direction and the cube will follow. This page include camera view, light source, and viewer source. However, the user cannot change the setting as it is embedded in the code.
+There is also a link to go back to homepage as well.
+
+For the "Bump Mapping Page", it display a moving sphere that is moving towards the user on the image. The user can click on the radio buttons to change the image.
+There is also a link to go back to the homepage as well.
+
+For the last page, "perspective" page, it show a picture where the user can drag the object's edges to deform the image.
+This allows the users to see the image from multiple perspectives, shapes, and sizes. 
+
+Overall, I think my program covers most of the features correctly with plenty of user interactions.
