@@ -20,4 +20,4 @@ There is also a link to go back to the homepage as well.
 For the last page, "perspective" page, it show a picture where the user can drag the object's edges to deform the image.
 This allows the users to see the image from multiple perspectives, shapes, and sizes. 
 
-Overall, I think my program covers most of the features correctly with plenty of user interactions.
+Overall, I think my program covers most of the features correctly with plenty of user interactions. For clarification, I also added my visual studio file in Github called "finalProject.sln" just in case something happen. I tested everything in visual studio, and everything works as stated. I also include a zip file of my visual studio of this project to both the Github and my cs page.
